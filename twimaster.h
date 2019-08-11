@@ -6,8 +6,8 @@
  * pinout:
  * PC4 (SDA), PC5 (SCL)                                                            
  **********************************************************************************************/
-#ifndef twimaster_H
-#define twimaster_H
+#ifndef __TWIMASTER_H__
+#define __TWIMASTER_H__
 
 #define F_CPU 16000000      //16 MHz
 //#define PRESCALER 1         //1, 4, 16, 64
