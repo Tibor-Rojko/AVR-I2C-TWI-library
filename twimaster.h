@@ -6,6 +6,8 @@
  * pinout:
  * PC4 (SDA), PC5 (SCL)                                                            
  **********************************************************************************************/
+#ifndef twimaster_H
+#define twimaster_H
 
 #define F_CPU 16000000      //16 MHz
 //#define PRESCALER 1         //1, 4, 16, 64
@@ -52,3 +54,5 @@ void twiSend(uint8_t data);
 */
 uint8_t twiReadWithAck(void);
 uint8_t twiReadNoAck(void);
+
+#endif
