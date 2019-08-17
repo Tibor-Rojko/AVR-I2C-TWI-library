@@ -9,13 +9,13 @@ Add this functions to anywhere in main, or while infinite loop:
     
     //For writing slave:
     twiStart();
-    twiSend(SLAVE_ADDRESS_W); //9th bit is 0 - write mode
+    twiSend(SLAVE_ADDRESS_W); //LSB is 0 - write mode
     twiSend(data);
     twiSend(data);
     twiStop();
 
     //For reading slave:
     twiStart();
-    twiSend(SLAVE_ADDRESS_R); //9th bit is 1 - read mode
+    twiSend(SLAVE_ADDRESS_R); //LSB is 1 - read mode
     data = twiReadWithAck();
     twiStop();
